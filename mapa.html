@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Mundo - A Era do Eclipse</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'MedievalSharp', cursive;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.8;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Barra Lateral */
+        aside {
+            width: 250px;
+            background-color: #111;
+            padding: 20px;
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        aside h2 {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 1.8rem;
+            color: #ff4444;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        aside nav ul {
+            list-style: none;
+        }
+
+        aside nav ul li {
+            margin-bottom: 15px;
+        }
+
+        aside nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        aside nav ul li a:hover {
+            color: #ff4444;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            flex: 1;
+            padding: 40px;
+            background-color: #1a1a1a;
+            overflow-y: auto;
+        }
+
+        main h1 {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 3rem;
+            color: #ff4444;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+
+        .local {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: rgba(255, 68, 68, 0.1);
+            padding: 20px;
+            border-left: 4px solid #ff4444;
+            border-radius: 5px;
+        }
+
+        .local img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-right: 20px;
+            border: 3px solid #ff4444;
+        }
+
+        .local h2 {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 2rem;
+            color: #ff4444;
+            margin-bottom: 10px;
+        }
+
+        .local p {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Botão de Voltar */
+        .btn-voltar {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4444;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+
+        .btn-voltar:hover {
+            background-color: #cc0000;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            aside {
+                width: 100%;
+                padding: 15px;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            aside h2 {
+                font-size: 1.5rem;
+            }
+
+            aside nav ul li a {
+                font-size: 1rem;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            main h1 {
+                font-size: 2.5rem;
+            }
+
+            .local {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .local img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .local h2 {
+                font-size: 1.8rem;
+            }
+
+            .local p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra Lateral -->
+    <aside>
+        <h2>Navegação</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="story.html">História</a></li>
+                <li><a href="pp.html">Personagens</a></li>
+                <li><a href="mapa.html">O Mundo</a></li>
+                <li><a href="rules.html">Regras</a></li>
+                <li><a href="comu.html">Comunidade</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h1>O Mundo</h1>
+
+        <!-- Solmaria -->
+        <div class="local">
+            <img src="reinado.webp" alt="Solmaria">
+            <div>
+                <h2>Solmaria</h2>
+                <p>
+                    O reino de Arthur, conhecido como o "Refúgio dos Desabrigados". Solmaria é um lugar de esperança, onde os oprimidos encontram abrigo. No entanto, a sombra do Eclipse paira sobre suas muralhas, e rumores de segredos obscuros assombram o rei.
+                </p>
+            </div>
+        </div>
+
+        <!-- Noctharys -->
+        <div class="local">
+            <img src="artreino.jpg" alt="Noctharys">
+            <div>
+                <h2>Noctharys</h2>
+                <p>
+                    A nação sombria fundada pelo Soberano do Eclipse. Hoje, é uma terra de ruínas e mistérios, onde a essência do Eclipse ainda reside. Muitos acreditam que segredos antigos e poderes proibidos aguardam aqueles que ousam explorar suas profundezas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Ruínas de Eldrath -->
+        <div class="local">
+            <img src="ruinareal.jpg" alt="Ruínas de Eldrath">
+            <div>
+                <h2>Ruínas de Eldrath</h2>
+                <p>
+                    Uma cidade antiga abandonada, conhecida por sua arquitetura impressionante e por ser amaldiçoada. Dizem que espíritos antigos vagam por suas ruínas, e que tesouros perdidos e conhecimentos proibidos estão escondidos em suas catacumbas.
+                </p>
+            </div>
+        </div>
+
+        <!-- O Mar Sombrio -->
+        <div class="local">
+            <img src="mar.webp" alt="O Mar Sombrio">
+            <div>
+                <h2>O Mar Sombrio</h2>
+                <p>
+                    Um oceano vasto e perigoso, onde monstros marinhos e tempestades implacáveis são comuns. Muitos navegadores desapareceram nessas águas, e lendas falam de uma ilha maldita no meio do mar, onde o Eclipse teria começado.
+                </p>
+            </div>
+        </div>
+
+        <!-- A Floresta dos Sussurros -->
+        <div class="local">
+            <img src="susurros.jpg" alt="A Floresta dos Sussurros">
+            <div>
+                <h2>A Floresta dos Sussurros</h2>
+                <p>
+                    Uma floresta densa e assustadora, onde os sussurros dos espíritos podem ser ouvidos entre as árvores. Dizem que aqueles que entram na floresta nunca retornam, e que ela esconde um portal para o reino das sombras.
+                </p>
+            </div>
+        </div>
+
+        <!-- O Deserto da Perdição -->
+        <div class="local">
+            <img src="deserto.jpg" alt="O Deserto da Perdição">
+            <div>
+                <h2>O Deserto da Perdição</h2>
+                <p>
+                    Um deserto implacável, onde o sol queima durante o dia e o frio congela à noite. Tribos nômades vagam por essas terras, e ruínas antigas sugerem que uma civilização poderosa uma vez prosperou aqui, antes de ser consumida pelo Eclipse.
+                </p>
+            </div>
+        </div>
+
+        <!-- Botão de Voltar -->
+        <a href="index.html" class="btn-voltar">Voltar ao Início</a>
+    </main>
+</body>
+</html>
